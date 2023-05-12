@@ -1,25 +1,22 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "incremental": true,
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "outDir": "./dist",
     "paths": {
       "@src/*": ["src/*"],
       "@specs/*": ["E2E/specs/*"]
     },
     "removeComments": true,
-    "resolveJsonModule": true,
     "sourceMap": true,
-    "skipLibCheck": true,
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "allowUnreachableCode": false,
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "incremental": true,
     "target": "es2020"
   },
-  "include": ["src/**/*"],
-
+  "include": ["src/**/*"]
 }
